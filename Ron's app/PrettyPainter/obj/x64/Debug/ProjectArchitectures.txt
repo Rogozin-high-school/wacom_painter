@@ -1,0 +1,1 @@
+C:\Users\yotam\Documents\wacom-hackathon\Ron's app\PrettyPainter\PrettyPainter.csproj;x64

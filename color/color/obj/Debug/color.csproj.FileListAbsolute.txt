@@ -1,0 +1,9 @@
+C:\Users\User\Desktop\wacom\color\color\bin\Debug\color.exe.config
+C:\Users\User\Desktop\wacom\color\color\bin\Debug\color.exe
+C:\Users\User\Desktop\wacom\color\color\bin\Debug\color.pdb
+C:\Users\User\Desktop\wacom\color\color\obj\Debug\color.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\wacom\color\color\obj\Debug\color.Form1.resources
+C:\Users\User\Desktop\wacom\color\color\obj\Debug\color.Properties.Resources.resources
+C:\Users\User\Desktop\wacom\color\color\obj\Debug\color.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\wacom\color\color\obj\Debug\color.exe
+C:\Users\User\Desktop\wacom\color\color\obj\Debug\color.pdb

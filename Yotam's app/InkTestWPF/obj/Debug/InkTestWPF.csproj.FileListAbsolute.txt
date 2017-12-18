@@ -1,0 +1,68 @@
+C:\Users\yotam\Documents\Visual Studio 2017\Projects\InkTestWPF\InkTestWPF\bin\Debug\InkTestWPF.exe.config
+C:\Users\yotam\Documents\Visual Studio 2017\Projects\InkTestWPF\InkTestWPF\bin\Debug\InkTestWPF.exe
+C:\Users\yotam\Documents\Visual Studio 2017\Projects\InkTestWPF\InkTestWPF\bin\Debug\InkTestWPF.pdb
+C:\Users\yotam\Documents\Visual Studio 2017\Projects\InkTestWPF\InkTestWPF\obj\Debug\InkTestWPF.csprojResolveAssemblyReference.cache
+C:\Users\yotam\Documents\Visual Studio 2017\Projects\InkTestWPF\InkTestWPF\obj\Debug\MainWindow.g.cs
+C:\Users\yotam\Documents\Visual Studio 2017\Projects\InkTestWPF\InkTestWPF\obj\Debug\App.g.cs
+C:\Users\yotam\Documents\Visual Studio 2017\Projects\InkTestWPF\InkTestWPF\obj\Debug\InkTestWPF_MarkupCompile.cache
+C:\Users\yotam\Documents\Visual Studio 2017\Projects\InkTestWPF\InkTestWPF\obj\Debug\InkTestWPF_MarkupCompile.lref
+C:\Users\yotam\Documents\Visual Studio 2017\Projects\InkTestWPF\InkTestWPF\obj\Debug\MainWindow.baml
+C:\Users\yotam\Documents\Visual Studio 2017\Projects\InkTestWPF\InkTestWPF\obj\Debug\InkTestWPF.g.resources
+C:\Users\yotam\Documents\Visual Studio 2017\Projects\InkTestWPF\InkTestWPF\obj\Debug\InkTestWPF.Properties.Resources.resources
+C:\Users\yotam\Documents\Visual Studio 2017\Projects\InkTestWPF\InkTestWPF\obj\Debug\InkTestWPF.csproj.GenerateResource.Cache
+C:\Users\yotam\Documents\Visual Studio 2017\Projects\InkTestWPF\InkTestWPF\obj\Debug\InkTestWPF.csproj.CoreCompileInputs.cache
+C:\Users\yotam\Documents\Visual Studio 2017\Projects\InkTestWPF\InkTestWPF\obj\Debug\InkTestWPF.exe
+C:\Users\yotam\Documents\Visual Studio 2017\Projects\InkTestWPF\InkTestWPF\obj\Debug\InkTestWPF.pdb
+C:\Users\Ron\Desktop\intel-painter\Yotam's app\InkTestWPF\bin\Debug\InkTestWPF.exe.config
+C:\Users\Ron\Desktop\intel-painter\Yotam's app\InkTestWPF\bin\Debug\InkTestWPF.exe
+C:\Users\Ron\Desktop\intel-painter\Yotam's app\InkTestWPF\bin\Debug\InkTestWPF.pdb
+C:\Users\Ron\Desktop\intel-painter\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.csprojResolveAssemblyReference.cache
+C:\Users\Ron\Desktop\intel-painter\Yotam's app\InkTestWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Ron\Desktop\intel-painter\Yotam's app\InkTestWPF\obj\Debug\App.g.cs
+C:\Users\Ron\Desktop\intel-painter\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF_MarkupCompile.cache
+C:\Users\Ron\Desktop\intel-painter\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF_MarkupCompile.lref
+C:\Users\Ron\Desktop\intel-painter\Yotam's app\InkTestWPF\obj\Debug\MainWindow.baml
+C:\Users\Ron\Desktop\intel-painter\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.g.resources
+C:\Users\Ron\Desktop\intel-painter\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.Properties.Resources.resources
+C:\Users\Ron\Desktop\intel-painter\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.csproj.GenerateResource.Cache
+C:\Users\Ron\Desktop\intel-painter\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.csproj.CoreCompileInputs.cache
+C:\Users\Ron\Desktop\intel-painter\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.exe
+C:\Users\Ron\Desktop\intel-painter\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.pdb
+C:\Users\Ron\Desktop\intel-painter\Yotam's app\InkTestWPF\bin\Debug\ColorPicker.dll
+C:\Users\Ron\Desktop\intel-painter\Yotam's app\InkTestWPF\bin\Debug\InkCanvasControls.dll
+C:\Users\yotam\Documents\wacom-hackathon\Yotam's app\InkTestWPF\bin\Debug\InkTestWPF.exe.config
+C:\Users\yotam\Documents\wacom-hackathon\Yotam's app\InkTestWPF\bin\Debug\InkTestWPF.exe
+C:\Users\yotam\Documents\wacom-hackathon\Yotam's app\InkTestWPF\bin\Debug\InkTestWPF.pdb
+C:\Users\yotam\Documents\wacom-hackathon\Yotam's app\InkTestWPF\bin\Debug\ColorPicker.dll
+C:\Users\yotam\Documents\wacom-hackathon\Yotam's app\InkTestWPF\bin\Debug\InkCanvasControls.dll
+C:\Users\yotam\Documents\wacom-hackathon\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.csprojResolveAssemblyReference.cache
+C:\Users\yotam\Documents\wacom-hackathon\Yotam's app\InkTestWPF\obj\Debug\MainWindow.g.cs
+C:\Users\yotam\Documents\wacom-hackathon\Yotam's app\InkTestWPF\obj\Debug\App.g.cs
+C:\Users\yotam\Documents\wacom-hackathon\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF_MarkupCompile.cache
+C:\Users\yotam\Documents\wacom-hackathon\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF_MarkupCompile.lref
+C:\Users\yotam\Documents\wacom-hackathon\Yotam's app\InkTestWPF\obj\Debug\MainWindow.baml
+C:\Users\yotam\Documents\wacom-hackathon\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.g.resources
+C:\Users\yotam\Documents\wacom-hackathon\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.Properties.Resources.resources
+C:\Users\yotam\Documents\wacom-hackathon\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.csproj.GenerateResource.Cache
+C:\Users\yotam\Documents\wacom-hackathon\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.csproj.CoreCompileInputs.cache
+C:\Users\yotam\Documents\wacom-hackathon\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.exe
+C:\Users\yotam\Documents\wacom-hackathon\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.pdb
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\bin\Debug\InkTestWPF.exe.config
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\bin\Debug\InkTestWPF.exe
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\bin\Debug\InkTestWPF.pdb
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\bin\Debug\ColorPicker.dll
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\bin\Debug\InkCanvasControls.dll
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.csprojResolveAssemblyReference.cache
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\obj\Debug\MainWindow.g.cs
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\obj\Debug\App.g.cs
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF_MarkupCompile.cache
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF_MarkupCompile.lref
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\obj\Debug\MainWindow.baml
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.g.resources
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.Properties.Resources.resources
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.csproj.GenerateResource.Cache
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.csproj.CoreCompileInputs.cache
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.exe
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\obj\Debug\InkTestWPF.pdb
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\obj\Debug\Window1.g.cs
+K:\Kdocuments\wacom\Yotam's app\InkTestWPF\obj\Debug\Window1.baml

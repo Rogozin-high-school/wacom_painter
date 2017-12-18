@@ -1,0 +1,2 @@
+MainPackage=C:\Users\yotam\Documents\wacom-hackathon\Ron's app\PrettyPainter\bin\x86\Debug\PrettyPainter_1.0.0.0_x86_Debug.appx
+SymbolPackage=C:\Users\yotam\Documents\wacom-hackathon\Ron's app\PrettyPainter\AppPackages\PrettyPainter_1.0.0.0_Debug_Test\PrettyPainter_1.0.0.0_x86_Debug.appxsym
