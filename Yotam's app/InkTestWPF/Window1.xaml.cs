@@ -20,7 +20,6 @@ namespace InkTestWPF
     public partial class Window1 : Window
     {
         //Set this to the name of the style
-        string style = "";
 
         
         public Window1()
@@ -32,6 +31,7 @@ namespace InkTestWPF
         {
             MainWindow w = new MainWindow();
             this.Hide();
+            w.style = style;
             w.ShowDialog();
             this.Close();
         }

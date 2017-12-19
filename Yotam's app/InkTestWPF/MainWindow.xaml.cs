@@ -26,6 +26,7 @@ namespace InkTestWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        public string style;
         public MainWindow()
         {
             InitializeComponent();
