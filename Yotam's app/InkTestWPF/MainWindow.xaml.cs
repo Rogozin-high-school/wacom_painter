@@ -26,7 +26,7 @@ namespace InkTestWPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        public string style;
+        public string style="Scream";
         public MainWindow()
         {
             InitializeComponent();
@@ -222,7 +222,10 @@ namespace InkTestWPF
 
         private void SelectStyleButton(object sender, RoutedEventArgs e)
         {
-
+            Window1 w = new Window1();
+            this.Hide();
+            w.ShowDialog();
+            this.Close();
         }
 
         private void PretifyButton(object sender, RoutedEventArgs e)
