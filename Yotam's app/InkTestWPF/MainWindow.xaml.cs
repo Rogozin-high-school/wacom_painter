@@ -187,6 +187,7 @@ namespace InkTestWPF
             inkCanvas.Strokes.Clear();
         }
 
+        //Opens shai's select style window
         private void SelectStyleButton(object sender, RoutedEventArgs e)
         {
             Window1 w = new Window1(this);
@@ -194,11 +195,14 @@ namespace InkTestWPF
             this.SetStyleLabel();
         }
 
+        // Changes the style label
         private void SetStyleLabel()
         {
             StyleLabel.Content = "Style : " + style;
         }
 
+        // Sends the image to the Style transfer server, downloads it and places it instead of the painting
+        // BUG : Placing the new image instead of the current painting doesn't work
         private void PretifyButton(object sender, RoutedEventArgs e)
         {
             RenderTargetBitmap rtb = new RenderTargetBitmap((int)inkCanvas.ActualWidth, (int)inkCanvas.ActualHeight, 96d, 96d, PixelFormats.Default);
@@ -221,6 +225,9 @@ namespace InkTestWPF
             //Debug code
             //will set the inkCanvas to the google logo
             requestX = WebRequest.CreateHttp("https://pbs.twimg.com/profile_images/839721704163155970/LI_TRk1z.jpg");
+
+            // The request's timeout, change if needed
+            requestX.Timeout = 60;
             requestX.Method = "GET";
             requestX.BeginGetResponse(GetResponseCallback, requestX);
         }
