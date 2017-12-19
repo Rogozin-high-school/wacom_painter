@@ -35,10 +35,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ColorPicker">
-      <HintPath>.\ColorPicker.dll</HintPath>
+      <HintPath>..\..\..\intel-painter\Yotam's app\InkTestWPF\ColorPicker.dll</HintPath>
     </Reference>
     <Reference Include="InkCanvasControls">
-      <HintPath>.\InkCanvasControls.dll</HintPath>
+      <HintPath>..\..\..\intel-painter\Yotam's app\InkTestWPF\InkCanvasControls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -110,6 +110,14 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\PenIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Muse.jpeg" />
+    <Resource Include="Resources\RainPrincess.jpeg" />
+    <Resource Include="Resources\Scream.jpeg" />
+    <Resource Include="Resources\Udnie.jpeg" />
+    <Resource Include="Resources\Wave.jpeg" />
+    <Resource Include="Resources\Wreck.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

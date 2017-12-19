@@ -27,42 +27,11 @@ namespace InkTestWPF
     public partial class MainWindow : Window
     {
         public string style;
+        HttpWebRequest requestX = null;
+
         public MainWindow()
         {
             InitializeComponent();
-            Window1 w = new Window1();
-            this.Hide();
-            w.ShowDialog();
-            this.Close();
-        }
-        //DO NOT TOUCH THIS VARIABLE
-        HttpWebRequest requestX = null;
-
-        // Event handler for the change button
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            RenderTargetBitmap rtb = new RenderTargetBitmap((int)inkCanvas.ActualWidth, (int)inkCanvas.ActualHeight, 96d, 96d, PixelFormats.Default);
-            rtb.Render(inkCanvas);
-            BmpBitmapEncoder encoder = new BmpBitmapEncoder();
-            encoder.Frames.Add(BitmapFrame.Create(rtb));
-            FileStream fs = File.Open(@"test.bmp", FileMode.Create);
-            encoder.Save(fs);
-            fs.Close();
-
-            string file_path = System.AppDomain.CurrentDomain.BaseDirectory.ToString() + "test.bmp";
-            string current_style = "wave";
-
-            string json_data = "{path:" + file_path + ",style:" + current_style + "}";
-            json_data = Base64Encode(json_data);
-
-            //The real code
-            //requestX = WebRequest.CreateHttp("http://localhost:9182?" + json_data);
-
-            //Debug code
-            //will set the inkCanvas to the google logo
-            requestX = WebRequest.CreateHttp("https://pbs.twimg.com/profile_images/839721704163155970/LI_TRk1z.jpg");
-            requestX.Method = "GET";
-            requestX.BeginGetResponse(GetResponseCallback, requestX);
         }
 
         // Sends the data to the Style Trasnfer Server and places the given image
@@ -89,15 +58,6 @@ namespace InkTestWPF
                 bitmap.EndInit();
                 ib.ImageSource = bitmap;
                 //TODO : We need to set inkCanvas.Background to ib (ImageBrush)
-
-                /*
-                Previous attempt
-                i.Source = bitmap;  // myImage linked with XAML
-
-                // adding the image to the ink canvas
-                MessageBox.Show(inkCanvas.Children.ToString());
-                //inkCanvas.Children.Add(i);
-                */
 
                 // Close the stream object
                 streamResponse.Close();
@@ -222,12 +182,40 @@ namespace InkTestWPF
 
         private void SelectStyleButton(object sender, RoutedEventArgs e)
         {
+            Window1 w = new Window1(this);
+            w.ShowDialog();
+            this.SetStyleLabel();
+        }
 
+        private void SetStyleLabel()
+        {
+            StyleLabel.Content = "Style : " + style;
         }
 
         private void PretifyButton(object sender, RoutedEventArgs e)
         {
+            RenderTargetBitmap rtb = new RenderTargetBitmap((int)inkCanvas.ActualWidth, (int)inkCanvas.ActualHeight, 96d, 96d, PixelFormats.Default);
+            rtb.Render(inkCanvas);
+            BmpBitmapEncoder encoder = new BmpBitmapEncoder();
+            encoder.Frames.Add(BitmapFrame.Create(rtb));
+            FileStream fs = File.Open(@"test.bmp", FileMode.Create);
+            encoder.Save(fs);
+            fs.Close();
 
+            string file_path = System.AppDomain.CurrentDomain.BaseDirectory.ToString() + "test.bmp";
+            string current_style = "wave";
+
+            string json_data = "{path:" + file_path + ",style:" + current_style + "}";
+            json_data = Base64Encode(json_data);
+
+            //The real code
+            //requestX = WebRequest.CreateHttp("http://localhost:9182?" + json_data);
+
+            //Debug code
+            //will set the inkCanvas to the google logo
+            requestX = WebRequest.CreateHttp("https://pbs.twimg.com/profile_images/839721704163155970/LI_TRk1z.jpg");
+            requestX.Method = "GET";
+            requestX.BeginGetResponse(GetResponseCallback, requestX);
         }
     }
 }

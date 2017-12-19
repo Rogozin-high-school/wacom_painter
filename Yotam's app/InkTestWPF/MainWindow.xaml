@@ -165,6 +165,7 @@
             <Slider Name="penWidthSlider" Minimum="1" Maximum="24" ValueChanged="Slider_ValueChanged" HorizontalAlignment="Stretch" Margin="10,275,10,0" VerticalAlignment="Top" Value="4"/>
         </Grid>
         <Button Click="PretifyButton" x:Name="pretifyButton" BorderThickness="0" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Background="#FF87CEEB" Margin="240,0,0,0" Content="Pretify"/>
-        <Button Click="SelectStyleButton" x:Name="selectStyleButton" BorderThickness="0" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Background="#FF87CEEB" Margin="300,0,0,0" Content="Select Style"/>
+        <Button Click="SelectStyleButton" x:Name="selectStyleButton" BorderThickness="0" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="81" Background="#FF87CEEB" Margin="300,0,0,0" Content="Select Style"/>
+        <Label x:Name="StyleLabel"  Content="Style : Scream" HorizontalAlignment="Left" Margin="404,17,0,0" VerticalAlignment="Top" Width="88"/>
     </Grid>
 </Window>

@@ -7,16 +7,15 @@
         mc:Ignorable="d"
         Title="Window1" Height="361.184" Width="412.5">
     <Grid>
-        <Image Height="100" Margin="10,27,299,0" VerticalAlignment="Top" Source="K:\Kdocuments\wacom\Yotam's app\InkTestWPF\Muse.jpeg" Stretch="Fill" MouseDown="Click"/>
-        <Label Content="La Muse
-               " HorizontalAlignment="Left" Margin="28,127,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.84,0.596"/>
-        <Image Source="K:\Kdocuments\wacom\Yotam's app\InkTestWPF\RainPrincess.jpeg" HorizontalAlignment="Left" Height="95" Margin="152,27,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.795,0.51" MouseDown="Click"/>
+        <Image Height="100" Margin="10,27,299,0" VerticalAlignment="Top" Source="pack://application:,,/Resources/Muse.jpeg" Stretch="Fill" MouseDown="Click"/>
+        <Label Content="La Muse" HorizontalAlignment="Left" Margin="28,127,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.84,0.596"/>
+        <Image Source="pack://application:,,/Resources/RainPrincess.jpeg" HorizontalAlignment="Left" Height="95" Margin="152,27,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.795,0.51" MouseDown="Click"/>
         <Label Content="Rain Princess" HorizontalAlignment="Left" Margin="152,127,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.184,1.154"/>
-        <Image Source="K:\Kdocuments\wacom\Yotam's app\InkTestWPF\Scream.jpeg" Stretch="Fill" HorizontalAlignment="Left" Height="100" Margin="289,27,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.04,-0.24" MouseDown="Click"/>
+        <Image Source="pack://application:,,/Resources/Scream.jpeg" Stretch="Fill" HorizontalAlignment="Left" Height="100" Margin="289,27,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.04,-0.24" MouseDown="Click"/>
         <Label Content="Scream" HorizontalAlignment="Left" Margin="319,127,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.895,0.115"/>
-        <Image MouseDown="Click" Source="K:\Kdocuments\wacom\Yotam's app\InkTestWPF\Udnie.jpeg" Stretch="Fill" HorizontalAlignment="Right" Height="100" Margin="0,172,299,0" VerticalAlignment="Top" Width="100"/>
-        <Image MouseDown="Click" Source="K:\Kdocuments\wacom\Yotam's app\InkTestWPF\Wave.jpeg" Stretch="Fill" HorizontalAlignment="Left" Height="100" Margin="152,172,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image MouseDown="Click" Source="K:\Kdocuments\wacom\Yotam's app\InkTestWPF\Wreck.jpeg" Stretch="Fill" HorizontalAlignment="Left" Height="100" Margin="289,172,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image MouseDown="Click" Source="pack://application:,,/Resources/Udnie.jpeg" Stretch="Fill" HorizontalAlignment="Right" Height="100" Margin="0,172,299,0" VerticalAlignment="Top" Width="100"/>
+        <Image MouseDown="Click" Source="pack://application:,,/Resources/Wave.jpeg" Stretch="Fill" HorizontalAlignment="Left" Height="100" Margin="152,172,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image MouseDown="Click" Source="pack://application:,,/Resources/Wreck.jpeg" Stretch="Fill" HorizontalAlignment="Left" Height="100" Margin="289,172,0,0" VerticalAlignment="Top" Width="100"/>
         <Label Content="Udinie" HorizontalAlignment="Left" Margin="28,290,0,0" VerticalAlignment="Top"/>
         <Label Content="Wave" HorizontalAlignment="Left" Margin="178,290,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.987,0.5"/>
         <Label Content="Wreck" HorizontalAlignment="Left" Margin="319,290,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.855,0.212"/>

@@ -20,19 +20,17 @@ namespace InkTestWPF
     public partial class Window1 : Window
     {
         //Set this to the name of the style
-
+        MainWindow mainWindow = null;
         
-        public Window1()
+        public Window1(MainWindow w)
         {
             InitializeComponent();
+            mainWindow = w;
         }
 
         public void Move(string style)
         {
-            MainWindow w = new MainWindow();
-            this.Hide();
-            w.style = style;
-            w.ShowDialog();
+            mainWindow.style = style;
             this.Close();
         }
 
