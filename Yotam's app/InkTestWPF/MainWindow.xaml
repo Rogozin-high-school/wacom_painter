@@ -17,7 +17,7 @@
             <DoubleAnimation Storyboard.TargetName="penPicker" Storyboard.TargetProperty="Height" From="320" To="0" Duration="0:0:0.2"></DoubleAnimation>
         </Storyboard>
     </Window.Resources>
-    
+
     <Grid Background="SkyBlue">
         <Button Click="penButton_Click" Name="penButton" BorderThickness="0" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Background="#FF87CEEB">
             <Grid>
@@ -28,10 +28,10 @@
         <Button Click="eraseButton_Click" Name="eraseButton" BorderThickness="0" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Background="#FF87CEEB" Margin="60,0,0,0">
             Erase
         </Button>
-        <Button Click="eraseStrokeButton_Click" Name="eraseStrokeButton" BorderThickness="0" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Background="#FF87CEEB" Margin="120,0,0,0">
+        <Button Click="eraseStrokeButton_Click" Name="eraseStrokeButton" BorderThickness="0" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="84" Background="#FF87CEEB" Margin="120,0,0,0">
             Erase Stroke
         </Button>
-        <Button Click="clearButton_Click" Name="clearButton" BorderThickness="0" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Background="#FF87CEEB" Margin="180,0,0,0">
+        <Button Click="clearButton_Click" Name="clearButton" BorderThickness="0" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Background="#FF87CEEB" Margin="209,0,0,0">
             Clear
         </Button>
         <InkCanvas StrokeCollected="inkCanvas_StrokeCollected" Name="inkCanvas" EditingMode="Ink" UseCustomCursor="True" Cursor="Hand" Margin="0,60,0,0">
@@ -164,8 +164,8 @@
             </Button>
             <Slider Name="penWidthSlider" Minimum="1" Maximum="24" ValueChanged="Slider_ValueChanged" HorizontalAlignment="Stretch" Margin="10,275,10,0" VerticalAlignment="Top" Value="4"/>
         </Grid>
-        <Button Click="PretifyButton" x:Name="pretifyButton" BorderThickness="0" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Background="#FF87CEEB" Margin="240,0,0,0" Content="Pretify"/>
-        <Button Click="SelectStyleButton" x:Name="selectStyleButton" BorderThickness="0" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="81" Background="#FF87CEEB" Margin="300,0,0,0" Content="Select Style"/>
-        <Label x:Name="StyleLabel"  Content="Style : Scream" HorizontalAlignment="Left" Margin="404,17,0,0" VerticalAlignment="Top" Width="88"/>
+        <Button Click="PretifyButton" x:Name="pretifyButton" BorderThickness="0" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Background="#FF87CEEB" Margin="269,0,0,0" Content="Pretify"/>
+        <Button Click="SelectStyleButton" x:Name="selectStyleButton" BorderThickness="0" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="81" Background="#FF87CEEB" Margin="329,0,0,0" Content="Select Style"/>
+        <Label x:Name="StyleLabel"  Content="Style : Scream" HorizontalAlignment="Left" Margin="433,17,0,0" VerticalAlignment="Top" Width="88"/>
     </Grid>
 </Window>
