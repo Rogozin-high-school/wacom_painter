@@ -18,6 +18,8 @@ using System.IO;
 using System.Web;
 using System.Net;
 using System.Drawing.Imaging;
+using System.CodeDom.Compiler;
+using System.CodeDom;
 
 namespace InkTestWPF
 {
@@ -26,7 +28,7 @@ namespace InkTestWPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        public string style="Scream";
+        public string style="scream";
 
         //DO NOT TOUCH THIS VARIABLE
         HttpWebRequest requestX = null;
@@ -35,6 +37,8 @@ namespace InkTestWPF
         {
             InitializeComponent();
         }
+
+        delegate void changeImageInInkCanvas();
 
         // Sends the data to the Style Trasnfer Server and places the given image
         // On the inkCanvas
@@ -53,14 +57,17 @@ namespace InkTestWPF
 
                 //Creating an imagebrush from the saved image
                 // and setting it to the inkCanvas.Background
-                ImageBrush ib = new ImageBrush();
+                /*ImageBrush ib = new ImageBrush();
                 BitmapImage bitmap = new BitmapImage();
                 bitmap.BeginInit();
                 bitmap.UriSource = new Uri("after.bmp", UriKind.Relative);
                 bitmap.EndInit();
                 ib.ImageSource = bitmap;
-                //TODO : We need to set inkCanvas.Background to ib (ImageBrush)
+                */
 
+                changeImageInInkCanvas del = setImageBrush;
+                inkCanvas.Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority.Normal, del);
+                
                 // Close the stream object
                 streamResponse.Close();
                 // Release the HttpWebResponse
@@ -72,9 +79,18 @@ namespace InkTestWPF
             }
         }
 
-        public void setImageBrush(ImageBrush ib)
+        public void setImageBrush()
         {
-            inkCanvas.Background = ib;
+            Image img = new Image
+            {
+                Source = new BitmapImage(new Uri("after.bmp", UriKind.Relative))
+            };
+
+            foreach (Image x in inkCanvas.Children)
+            {
+                MessageBox.Show("Hello world !");
+            }
+            inkCanvas.Children.Add(img);
         }
 
         public static string Base64Encode(string plainText)
@@ -198,8 +214,22 @@ namespace InkTestWPF
         // Changes the style label
         private void SetStyleLabel()
         {
-            StyleLabel.Content = "Style : " + style;
+            StyleLabel.Content = "Style : " + this.style;
         }
+
+        //Escapes the string
+        private static string ToLiteral(string input)
+        {
+            using (var writer = new StringWriter())
+            {
+                using (var provider = CodeDomProvider.CreateProvider("CSharp"))
+                {
+                    provider.GenerateCodeFromExpression(new CodePrimitiveExpression(input), writer, null);
+                    return writer.ToString();
+                }
+            }
+        }
+
 
         // Sends the image to the Style transfer server, downloads it and places it instead of the painting
         // BUG : Placing the new image instead of the current painting doesn't work
@@ -214,17 +244,18 @@ namespace InkTestWPF
             fs.Close();
 
             string file_path = System.AppDomain.CurrentDomain.BaseDirectory.ToString() + "test.bmp";
-            string current_style = "wave";
-
-            string json_data = "{path:" + file_path + ",style:" + current_style + "}";
+            string current_style = style;
+            string json_data = "{\"path\":" + ToLiteral(file_path) + ", \"style\":\"" + current_style + "\"}";
+            json_data.Replace(" ","\\n");
+            MessageBox.Show(json_data);
             json_data = Base64Encode(json_data);
 
             //The real code
-            //requestX = WebRequest.CreateHttp("http://localhost:9182?" + json_data);
+            requestX = WebRequest.CreateHttp("http://localhost:8081/?" + json_data);
 
             //Debug code
             //will set the inkCanvas to the google logo
-            requestX = WebRequest.CreateHttp("https://pbs.twimg.com/profile_images/839721704163155970/LI_TRk1z.jpg");
+            //requestX = WebRequest.CreateHttp("https://pbs.twimg.com/profile_images/839721704163155970/LI_TRk1z.jpg");
 
             // The request's timeout, change if needed
             requestX.Timeout = 60;

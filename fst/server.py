@@ -18,7 +18,9 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
         except:
             self.send_response(404)
             self.wfile.write(bytes("Not found", "utf-8"))
-        
+            print("Failed request")
+            return
+
         evaluate.ffwd([q["path"]], ["out_dir/result.png"], "models/" + q["style"] + ".ckpt")
 
         self.send_response(200)

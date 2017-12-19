@@ -112,12 +112,12 @@
     <Resource Include="Resources\PenIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Muse.jpeg" />
-    <Resource Include="Resources\RainPrincess.jpeg" />
-    <Resource Include="Resources\Scream.jpeg" />
-    <Resource Include="Resources\Udnie.jpeg" />
-    <Resource Include="Resources\Wave.jpeg" />
-    <Resource Include="Resources\Wreck.jpeg" />
+    <Resource Include="Resources\la_muse.jpeg" />
+    <Resource Include="Resources\rain_princess.jpeg" />
+    <Resource Include="Resources\scream.jpeg" />
+    <Resource Include="Resources\udnie.jpeg" />
+    <Resource Include="Resources\wave.jpeg" />
+    <Resource Include="Resources\wreck.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
