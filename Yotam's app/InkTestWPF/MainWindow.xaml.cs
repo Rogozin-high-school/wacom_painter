@@ -26,7 +26,9 @@ namespace InkTestWPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        public string style;
+        public string style="Scream";
+
+        //DO NOT TOUCH THIS VARIABLE
         HttpWebRequest requestX = null;
 
         public MainWindow()
