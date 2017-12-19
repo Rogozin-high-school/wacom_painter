@@ -28,6 +28,11 @@ namespace InkTestWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        class TransmitionData
+        {
+            public string path;
+            public string style;
+        }
         public string style="scream";
 
         //DO NOT TOUCH THIS VARIABLE
@@ -81,16 +86,8 @@ namespace InkTestWPF
 
         public void setImageBrush()
         {
-            Image img = new Image
-            {
-                Source = new BitmapImage(new Uri("after.bmp", UriKind.Relative))
-            };
-
-            foreach (Image x in inkCanvas.Children)
-            {
-                MessageBox.Show("Hello world !");
-            }
-            inkCanvas.Children.Add(img);
+            ShowImage f = new ShowImage("after.bmp");
+            f.ShowDialog();
         }
 
         public static string Base64Encode(string plainText)
@@ -246,7 +243,6 @@ namespace InkTestWPF
             string file_path = System.AppDomain.CurrentDomain.BaseDirectory.ToString() + "test.bmp";
             string current_style = style;
             string json_data = "{\"path\":" + ToLiteral(file_path) + ", \"style\":\"" + current_style + "\"}";
-            json_data.Replace(" ","\\n");
             MessageBox.Show(json_data);
             json_data = Base64Encode(json_data);
 

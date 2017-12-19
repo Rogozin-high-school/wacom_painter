@@ -166,6 +166,6 @@
         </Grid>
         <Button Click="PretifyButton" x:Name="pretifyButton" BorderThickness="0" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Background="#FF87CEEB" Margin="269,0,0,0" Content="Pretify"/>
         <Button Click="SelectStyleButton" x:Name="selectStyleButton" BorderThickness="0" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="81" Background="#FF87CEEB" Margin="329,0,0,0" Content="Select Style"/>
-        <Label x:Name="StyleLabel"  Content="Style : Scream" HorizontalAlignment="Left" Margin="433,17,0,0" VerticalAlignment="Top" Width="221"/>
+        <Label x:Name="StyleLabel"  Content="Style : scream" HorizontalAlignment="Left" Margin="433,17,0,0" VerticalAlignment="Top" Width="221"/>
     </Grid>
 </Window>
