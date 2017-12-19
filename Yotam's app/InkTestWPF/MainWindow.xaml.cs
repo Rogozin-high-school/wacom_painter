@@ -218,5 +218,15 @@ namespace InkTestWPF
         {
             inkCanvas.Strokes.Clear();
         }
+
+        private void SelectStyleButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void PretifyButton(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
